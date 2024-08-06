@@ -1,0 +1,7 @@
+algo = input('Digite algo: ')
+print(algo.isalnum())
+print(algo.isalpha())
+print(algo.isascii())
+print(algo.isdecimal())
+print(algo.isnumeric())
+print(algo.isupper())

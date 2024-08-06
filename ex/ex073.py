@@ -1,0 +1,12 @@
+tabela = ('Botafogo', 'Flamengo', 'Fortaleza', 'Palmeiras', 'Cruzeiro', 'São Paulo', 'Bahia', 'Athletico-PR', 'Atlético-MG', 'Red Bull Bragantino', 'Vasco', 'Criciúma', 'Juventude', 'Grêmio', 'Vitória', 'Internacional', 'Fluminense', 'Corinthians', 'Cuiabá', 'Atlético-GO')
+
+print(f'Lista de times do Brasileirão: {tabela}')
+print('--' * 67)
+print(f'Os cinco primeiros são: {tabela[:5]}')
+print('--' * 44)
+print(f'Os quatro últimos são: {tabela[-4:]}')
+print('--' * 40)
+print(f'Times em ordem alfabética: {sorted(tabela)}')
+print('--' * 65)
+print(f'O Internacional está na {tabela.index('Internacional') + 1}ª posição')
+print('--' * 18)
