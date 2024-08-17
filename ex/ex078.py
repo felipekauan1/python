@@ -19,7 +19,7 @@ for e, v in enumerate(valores):
 
 print()
 
-print(f'O menor valor digitado foi {menor} nas posições', end=' ')
+print(f'O menor valor digitado foi {menor} nas posições ', end='')
 for e, v in enumerate(valores):
     if v == menor:
         print(f'{e}... ', end='')
