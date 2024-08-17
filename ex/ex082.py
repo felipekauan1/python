@@ -3,8 +3,7 @@ pares = []
 impares = []
 
 while True:
-    n = int(input('Digite um número: '))
-    lista.append(n)
+    lista.append(int(input('Digite um número: ')))
     continuar = str(input('Quer continuar? [S/N] ')).lower()
     if continuar == 'n':
         break
