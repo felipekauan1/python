@@ -1,16 +1,14 @@
 pessoas = []
 dados = []
-totpessoas = 0
 maispesados = []
 maisleves = []
 
 # recebe o nome e peso das pessoas e adiciona-os a lista
 while True:
     dados.append(str(input('Digite seu nome: ')))
-    dados.append(int(input('Digite seu peso: ')))
+    dados.append(float(input('Digite seu peso: ')))
     # adiciona a cópia a lista dados na lista pessoas
     pessoas.append(dados.copy())
-    totpessoas += 1  # conta quantas pessoas foram cadastradas
     dados.clear()  # limpa a lista dados antes de ler novos dados
 
     # verifica se o usuário quer ou não continuar cadastrando novos dados
@@ -37,7 +35,7 @@ for p in pessoas:
         # maisleves recebe o nome das pessoas mais leves
         maisleves.append(p[0])
 
-print(f'Ao todo foram cadastradas {totpessoas} pessoas na lista')
+print(f'Ao todo foram cadastradas {len(pessoas)} pessoas na lista')
 
 print(f'O maior peso foi de {maiorpeso} Kg. Peso de {maispesados}')
 

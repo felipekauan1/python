@@ -7,10 +7,9 @@ for c in range(1, 8):
     else:
         lista[1].append(valor)
 
-print(f'Todos os itens da lista: {lista}')
-
 lista[0].sort()
 lista[1].sort()
 
+print(f'Todos os itens da lista: {lista}')
 print(f'Os valores pares da lista em ordem crescente são {lista[0]}')
 print(f'Os valores impares da lista em ordem crescente são {lista[1]}')

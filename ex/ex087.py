@@ -23,7 +23,7 @@ for linha in matriz:
     soma_3_coluna += linha[2]
 
 # calcula o maior valor da segunda linha da matriz
-for e, c in enumerate(matriz[1]):
+for e, c in enumerate(matriz[1]):   
     if e == 0 or c > maior:
         maior = c
 

@@ -12,6 +12,8 @@ for l in range(0, quantos_jogos):
     for c in range(0, 6):  # adiciona 6 valores aleatórios na lista jogos
         jogos[l].append(randint(1, 60))
 
+    jogos[l].sort()
+
     print(f'Jogo {l + 1}: {jogos[l]}')  # printa a lista na posição [l]
 
     sleep(.7)  # espera 0.7s
