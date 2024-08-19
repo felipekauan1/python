@@ -10,9 +10,14 @@ for l in range(0, quantos_jogos):
     jogos.append([])  # adiciona uma lista vazia no final da lista jogos
 
     for c in range(0, 6):  # adiciona 6 valores aleatórios na lista jogos
+        # testa se o valor aleatório não está na lista jogos[l]
         while True:
-            aleatorio = randint(1, 60)
-            if aleatorio not in jogos[l]:  # se o número sorteado não estiver na lista jogos[l], o número é adicionado a lista e o laço é encerrado
+            aleatorio = randint(0, 4)
+            # se o valor aleatório estiver na lista ele será sorteado outra vez
+            if aleatorio in jogos[l]:
+                continue
+            # senão estiver na lista o valor aleatório é adicionado na lista jogos[l] e o laço e encerrado
+            else:
                 jogos[l].append(aleatorio)
                 break
 
