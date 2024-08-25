@@ -6,12 +6,12 @@ while True:
     pessoa['nome'] = str(input('Nome: '))
 
     while True:
-        pessoa['sexo'] = str(input('Sexo: ')).upper()
+        pessoa['sexo'] = str(input('Sexo: ')).upper()[0]
         if pessoa['sexo'] in 'FM':
             break
         else:
             print('Digite um sexo valido!')
-    
+
     pessoa['idade'] = int(input('Idade: '))
 
     # adiciona os dados da pessoa na lista
@@ -19,8 +19,8 @@ while True:
     # limpa os dados da pessoa
     pessoa.clear()
 
-    # se a resposta for sim, irá ler novos dados
-    resposta = str(input('Quer continuar? [S/N] '))
+    # se a resposta for sim, irá reiniciar a estrutura de repetição
+    resposta = str(input('Quer continuar? [S/N] '))[0]
     if resposta in 'Nn':
         break
 
