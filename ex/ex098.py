@@ -1,3 +1,6 @@
+from time import sleep
+
+
 def contador(inicio, fim, passo):
     if passo == 0:
         passo = 1
@@ -5,10 +8,12 @@ def contador(inicio, fim, passo):
     if inicio < fim:
         print(f'Contagem de {inicio} até {fim - 1} de {passo} em {passo}')
     elif inicio > fim:
-        print(f'Contagem de {inicio} até {fim + 1} de {abs(passo)} em {abs(passo)}')
+        print(f'Contagem de {inicio} até {
+              fim + 1} de {abs(passo)} em {abs(passo)}')
 
     for c in range(inicio, fim, passo):
-        print(c, end=' ')
+        print(c, end=' ', flush=True)
+        sleep(.35)
     print('FIM!')
 
 

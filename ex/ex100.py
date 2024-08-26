@@ -1,12 +1,13 @@
 from random import randint
+from time import sleep
 
 
 def sorteia(lista):
-    for i in range(0, 5):
-        lista.append(randint(0, 10))
     print('Sorteando 5 valores da lista: ', end='')
-    for item in lista:
-        print(item, end=' ')
+    for i in range(0, 5):
+        lista.append(randint(1, 10))
+        print(lista[i], end=' ', flush=True)
+        sleep(.3)
     print('PRONTO!')
 
 
@@ -19,6 +20,5 @@ def somaPar(lista):
 
 
 numeros = list()
-
 sorteia(numeros)
 somaPar(numeros)
