@@ -5,5 +5,4 @@ def escreva(msg):
 
 
 escreva('Olá, mundo!')
-
 escreva('CeV')
