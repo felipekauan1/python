@@ -3,6 +3,14 @@ def ficha(nome='<desconhecido>', gols=0):
 
 
 n = str(input('Nome do jogador: '))
-g= int(input('Número de gols: '))
+g = str(input('Número de gols: '))
 
-print(ficha(nome=n, gols=g))
+if g.isnumeric():
+    g = int(g)
+else:
+    g = 0
+
+if n.strip() == '':
+    print(ficha(gols=g))
+else:
+    print(ficha(nome=n, gols=g))

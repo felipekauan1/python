@@ -1,7 +1,9 @@
-from datetime import date
+
 
 
 def voto(anonasc):
+    from datetime import date
+    
     idade = date.today().year - anonasc
 
     print(f'Com {idade} anos: ', end='')
