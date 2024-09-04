@@ -1,11 +1,9 @@
 def aumentar(v, a):
-    v += (v * a / 100)
-    return v
+    return + (v * a / 100)
 
 
 def diminuir(v, d):
-    v -= (v * d / 100)
-    return v
+    return v - (v * d / 100)
 
 
 def dobro(v):
