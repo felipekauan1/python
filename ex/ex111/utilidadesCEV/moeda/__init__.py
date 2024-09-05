@@ -5,8 +5,10 @@ def resumo(preço, taxa_aumento, taxa_redução):
     print(f'Preço analisado: \t{moeda(preço)}')
     print(f'Dobro do preço: \t{dobro(preço, True)}')
     print(f'Metade do preço: \t{metade(preço, True)}')
-    print(f'{taxa_aumento}% de aumento: \t{aumentar(preço, taxa_aumento, True)}')
-    print(f'{taxa_redução}% de redução: \t{diminuir(preço, taxa_redução, True)}')
+    print(f'{taxa_aumento}% de aumento: \t{
+          aumentar(preço, taxa_aumento, True)}')
+    print(f'{taxa_redução}% de redução: \t{
+          diminuir(preço, taxa_redução, True)}')
     print('-' * 35)
 
 
