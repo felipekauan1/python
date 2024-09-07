@@ -6,6 +6,7 @@ def leiaInt(msg):
             print('\033[31mERRO: Digite um número INTEIRO!\033[0m')
         except KeyboardInterrupt:
             print('\033[33mO usuário preferiu não digitar esse número!\033[0m')
+            return 0
         else:
             return inteiro
 
@@ -18,8 +19,11 @@ def leiaFloat(msg):
             print(f'\033[31m{erro.__class__}: Digite um número REAL!\033[0m')
         except KeyboardInterrupt:
             print('\033[33mO usuário preferiu não digitar esse número!\033[0m')
+            return 0
         else:
             return real
 
 
-print(f'O número INTEIRO digitado foi {leiaInt('Digite um Inteiro: ')} e o REAL foi {leiaFloat('Digite um Real: ')}')
+inteiro = leiaInt('Digite um Inteiro: ')
+real = leiaFloat('Digite um Real: ')
+print(f'O número INTEIRO digitado foi {inteiro} e o REAL foi {real}')
